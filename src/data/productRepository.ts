@@ -9,7 +9,7 @@ export const ProductRepository = {
         stock: number;
         is_active: boolean;
         created_at: Date;
-        Updated_at: Date;
+        updated_at: Date;
     }) => {
         return prisma.product.create({ data });
     },
@@ -33,7 +33,7 @@ export const ProductRepository = {
             stock: number;
             is_active: boolean;
             created_at: Date;
-            Updated_at: Date;
+            updated_at: Date;
         }
     ) => {
         return prisma.product.update({ where: { id }, data });
