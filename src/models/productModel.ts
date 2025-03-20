@@ -5,8 +5,8 @@ export const ProductSchema = z.object({
     price: z.number().positive("Price must be positive"),
     stock: z.number().positive("Stock must be positive"),
     is_active: z.boolean(),
-    created_at: z.date().optional(),
-    updated_at: z.date().optional(),
+    created_at: z.date(),
+    updated_at: z.date(),
 });
 
 export type ProductInput = z.infer<typeof ProductSchema>;
